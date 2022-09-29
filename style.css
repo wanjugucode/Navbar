@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background:rgb(6, 6, 41);
+
+
+
+}
+
+.menu{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.menu li{
+    position: absolute;
+
+    left: 0;
+    list-style: none;
+   transform-origin:100px;
+   transform: rotate(calc(360deg / 8 * var(--i)));
+
+
+ } 
+
+
+
+.toggle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 2px blue;
+    
+    font-size:2em ;
+    transition:transform 1.25s;
+
+  
+
+} 
+.toggle:hover{
+
+    box-shadow:0 1px 2px 2px lightblue;
+
+}
+.menu li a{
+    display: flex;
+    background: rgb(137, 137, 163);
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgb(6, 6, 41);
+    box-shadow: 0 1px 2px 2px rgb(12, 11, 80);
+    transform: rotate(calc(360deg / -8 * var(--i)));
+
+
+    margin: -95px;
+ color: white;
+
+}
+.menu li a:hover{
+    box-shadow:0 1px 2px 2px lightblue;
+    
+}
+.menu li a:hover {
+    box-shadow:0 1px 2px 2px lightblue;
+    text-decoration: none;
+
+    
+    
+}
+.menu li a:hover ion-icon{
+    display:none;
+}
+
+span{
+    display: none;
+}
+.menu li a:hover span {
+    display:block;
+    
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
